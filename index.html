@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./js/index.js"></script>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
+</head>
+
+<body>
+  <!-- 1 -->
+  <div class="top">
+    <div class="box">
+      <div class="logo">
+        <span>LOGO</span>
+      </div>
+      <div class="logOut">
+        <div class="setting"><img src="./images/setting.png" alt=""></div>
+        <div class="bell"><img src="./images/bell.png" alt=""></div>
+        <div class="logout">
+          <span>Log Out</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="middle">
+    <div class="box">
+      <div class="one">
+        <!-- 轮播 -->
+        <div class="rotation">
+          <div class="rota_title">
+            <span>Audience Overview</span>
+            <span>Roseville, CA</span>
+          </div>
+          <div id="box">
+            <div class="lunbo" id="lunbo">
+              <div class="pre" id="pre">&lt;</div>
+              <div class="next" id="next">&gt;</div>
+              <div id="list" style="left: -540px;">
+                <div><img src="./images/1.jpeg" alt=""></div>
+                <div><img src="./images/1.jpeg" alt=""></div>
+                <div><img src="./images/1.jpeg" alt=""></div>
+                <div><img src="./images/1.jpeg" alt=""></div>
+                <div><img src="./images/1.jpeg" alt=""></div>
+                <div><img src="./images/1.jpeg" alt=""></div>
+                <div><img src="./images/1.jpeg" alt=""></div>
+              </div>
+              <div id="dot">
+                <span index="1" class="current"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+                <span index="4"></span>
+                <span index="5"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 选项卡 -->
+        <div class="general" id="general">
+          <div class="general_bar">
+            <ul class="general_bar_ul">
+              <li class="general_bar_li" data-index="0">DASHBOARD</li>
+              <li class="general_bar_li" data-index="1">PROJECTS</li>
+              <li class="general_bar_li" data-index="2">CALENDAR</li>
+              <li class="general_bar_li" data-index="3">MAILBOX</li>
+              <li class="general_bar_li" data-index="4">SETTINGS</li>
+            </ul>
+          </div>
+          <div id="general_bar_line" class="general_line_animated"></div>
+          <div class="general_content general_content_animated">
+            <div class="general_content_item">
+              <div class="general_content_top">
+                <div>Support Requests</div>
+                <div>View All</div>
+              </div>
+              <div class="general_content_bot">
+                <div>
+                  <span>TIME</span>
+                  <span>9:45pm</span>
+                  <span>9:45pm</span>
+                </div>
+                <div>
+                  <span>USER NAME</span>
+                  <span>info@design.com</span>
+                  <span>info@design.com</span>
+                </div>
+                <div>
+                  <span>STATUS</span>
+                  <span>solved</span>
+                  <span>solved</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="general_content_item">
+              2
+            </div>
+
+            <div class="general_content_item">
+              3
+            </div>
+
+            <div class="general_content_item">
+              4
+            </div>
+
+            <div class="general_content_item">
+              5
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two">
+        <!-- 曲线图 -->
+        <div class="tip">
+          <span>曲线图数据展示</span>
+        </div>
+
+        <div class="graph" id="graph"></div>
+      </div>
+
+      <div class="three">
+        <!-- 饼状图 -->
+        <div class="pieChart">
+          <div class="tip">
+            <span>饼状图数据展示</span>
+          </div>
+
+          <div id="pieChart"></div>
+        </div>
+        <!-- 柱状图 -->
+        <div class="columnChart">
+          <div class="tip">
+            <span>柱状图数据展示</span>
+          </div>
+
+          <div id="columnChart"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="footer">
+    <div class="box">
+      <div class="foot_logo">
+        <span>LOGO</span>
+      </div>
+      <div class="foot_nav">
+        <div class="one">
+          <span>NEW</span>
+          <span>CHANNELS</span>
+          <span>OVERVIEW</span>
+          <span>TIMELINE</span>
+        </div>
+        <div class="two">
+          <span>SPORT</span>
+          <span>CULTURE</span>
+          <span>NATURE</span>
+          <span>MUSIC</span>
+        </div>
+        <div class="three">
+          <span>WEATHER</span>
+          <span>AUTOS</span>
+          <span>LOCAL</span>
+          <span>SHOP</span>
+        </div>
+        <div class="four">
+          <span>FUTURE</span>
+          <span>FOOD</span>
+          <span>EARTH</span>
+          <span>TV</span>
+        </div>
+        <div class="five">
+          <span>RAVEL</span>
+          <span>RADIO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom"></div>
+</body>
+
+</html>
